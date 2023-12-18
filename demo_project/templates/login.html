@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="col-md-6">
+                     <div class="mail_section_1">
+                        <form action="" method="post">
+    {% csrf_token %}
+     <input type="text" class="mail_text" placeholder="Enter User Name" name="username">
+                           <input type="password" class="mail_text" placeholder="Enter Your Password" name="password">
+
+     <div class="send_bt">
+      <input type="submit">
+   </div>
+    <a class="nav-link register-link" href="{% url 'demo_app:register' %}">Register</a>
+</form>
+                     </div>
+                  </div>
+{% endblock %}

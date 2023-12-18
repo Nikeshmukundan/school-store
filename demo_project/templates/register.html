@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="col-md-6">
+                     <div class="mail_section_1">
+                        <form action="" method="post" >
+                           {% csrf_token %}
+                        <input type="text" class="mail_text" placeholder="Enter User Name" name="username">
+                        <input type="password" class="mail_text" placeholder="Enter Your Password" name="password">
+                        <input type="password" class="mail_text" placeholder="Confirm your Password" name="cpassword">
+
+                           <div class="send_bt">
+                               <input type="submit">
+                           </div>
+
+                           </form>
+
+                  </div>
+               </div>
+
+{% endblock %}
